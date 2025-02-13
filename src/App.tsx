@@ -8,15 +8,19 @@ import FeedbackForm from "./components/FeedbackForm/FeedbackForm.tsx";
 const links: Link[] = [
   {
     href: "https://react.dev/reference/react/createElement",
-    text: "React.createElement documentation",
+    text: "Part 1: React.createElement documentation",
   },
   {
     href: "https://react.dev/reference/react/useState",
-    text: "React.useState documentation",
+    text: "Part 2: React.useState documentation",
   },
   {
     href: "https://react.dev/reference/react/memo",
-    text: "React.memo documentation",
+    text: "Part 3: React.memo documentation",
+  },
+  {
+    href: "https://react.dev/reference/react/useEffect",
+    text: "Part 4: React.useEffect documentation",
   },
 ];
 
