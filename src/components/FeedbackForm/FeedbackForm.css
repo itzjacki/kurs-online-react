@@ -1,0 +1,26 @@
+.feedback {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: flex-start;
+  gap: 0.25rem;
+  margin-top: 2rem;
+
+  & #feedbackInputLabel {
+    margin-top: 0.5rem;
+  }
+
+  & input,
+  #feedbackInput {
+    width: 100%;
+  }
+
+  & button {
+    place-self: center;
+  }
+
+  & #feedbackInputLabel,
+  #feedbackInput,
+  button {
+    grid-column: 1 / -1;
+  }
+}

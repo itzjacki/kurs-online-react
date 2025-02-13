@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", ".fasit/LogoHeader.ts", ".fasit/UsefulLinks.ts"]
 }

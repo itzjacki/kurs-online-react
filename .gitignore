@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Jeg kan jo ikke bare gi dere fasiten :P
+.fasit
