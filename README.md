@@ -18,23 +18,23 @@ For å sette opp prosjektet:
 
 1. Skriv om `FeedbackForm.tsx` så input-feltene er _controlled_, altså at verdien deres styres av en state.
 2. Skriv om handleSubmit-funksjonen så den ikke baserer seg på et submitta form lengre, men heller bruker state-verdiene assosiert input-feltene.
-   a. Tips! Endre knappen fra `type="submit"` til `type="button"` for å hindre at det automatisk lages en submit-event man må håndtere.
+   - Tips! Endre knappen fra `type="submit"` til `type="button"` for å hindre at det automatisk lages en submit-event man må håndtere.
 3. Bruk det faktum at feedback-feltet er controlled til å lage en character counter som kommuniserer til brukeren hvor mange characters de har igjen.
 
 ## Oppgave 3 - Unødvendige renders
 
 1. Eksperimenter litt med applikasjonen, når re-rendres de forskjellige komponentene? Det er flere måter å gjøre dette på, jeg anbefaler å prøve begge:
-   a. Installer [React Dev Tools](https://react.dev/learn/react-developer-tools), skru på Inspect element -> Profiler -> Options -> Highlight updates when components render, og gjør noe som oppdaterer state
-   b. Legger man en `console.log` i komponenten (inne i funksjonen, men før `return`-statementet) vil denne printe til konsollen hver gang komponenten rendres.
+   - Installer [React Dev Tools](https://react.dev/learn/react-developer-tools), skru på Inspect element -> Profiler -> Options -> Highlight updates when components render, og gjør noe som oppdaterer state
+   - Legger man en `console.log` i komponenten (inne i funksjonen, men før `return`-statementet) vil denne printe til konsollen hver gang komponenten rendres.
 2. Bruk teknikkene vi så på til å optimalisere applikasjonen så den ikke rendrer flere komponenter enn nødvendig.
-   a. Flytting av state nedover
-   b. [Memoization](https://react.dev/reference/react/memo)
+   - Flytting av state nedover
+   - [Memoization](https://react.dev/reference/react/memo)
 
 ## Oppgave 4 - The Circle of life
 
 1. Eksperimenter med useEffects i CounterButton, sjekk at du klarer å logge både når komponenten mounter, unmounter og re-rendrer. CounterButton er praktisk, siden den kan mountes og unmountes med en checkbox som allerede finnes, samt re-rendres ved å trykke på counteren.
 2. Til slutt skal vi eksperimentere med en relativt vanlig bug!
-   a. Definer en funksjon i CounterButton-komponenten som gjør et eller annet
-   b. La oss si at vi vil bruke denne i en UseEffect, da bør vi også inkludere funksjonen i deps array
-   c. Hva om vi også vil oppdatere state fra samme deps array? Prøv!
-   d. Hva er grunnen til at vi får uendelige re-renders?
+   - Definer en funksjon i CounterButton-komponenten som gjør et eller annet
+   - La oss si at vi vil bruke denne i en UseEffect, da bør vi også inkludere funksjonen i deps array
+   - Hva om vi også vil oppdatere state fra samme deps array? Prøv!
+   - Hva er grunnen til at vi får uendelige re-renders?
