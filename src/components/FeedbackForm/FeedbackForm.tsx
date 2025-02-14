@@ -32,7 +32,7 @@ const FeedbackForm = () => {
       </label>
       <textarea name="feedback" id="feedbackInput" />
 
-      <button type="button">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };
